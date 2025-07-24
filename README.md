@@ -1,17 +1,17 @@
-# **Magic Portfolio by Once UI**
+# **Aakash Mahajan's Portfolio**
 
-View the [demo here](https://demo.magic-portfolio.com).
+Built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org).
 
-![Magic Portfolio](https://demo.magic-portfolio.com/images/og/home.jpg)
+![Aakash Mahajan's Portfolio](https://aakashmahajan.com/images/og/home.jpg)
 
 
 # **Getting started**
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+This portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
 **1. Clone the repository**
 ```
-git clone https://github.com/once-ui-system/magic-portfolio.git
+git clone https://github.com/AakashMahajan25/portfolio.git
 ```
 
 **2. Install dependencies**
@@ -67,14 +67,21 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 - A localized version of Magic Portfolio is available with the next-intl library
 - To use localization, switch to the 'i18n' branch
 
-# **Authors**
+# **Author**
 
-Connect with us on Threads or LinkedIn.
+**Aakash Mahajan** - Full Stack Developer
 
-Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
-Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
+- [GitHub](https://github.com/AakashMahajan25)
+- [LinkedIn](https://www.linkedin.com/in/aakash-mahajan/)
+- [X (Twitter)](https://x.com/AakashM_25)
+- [Email](mailto:me@aakashmahajan.com)
 
-Localization added by [François Hernandez](https://github.com/francoishernandez)
+---
+
+*This portfolio is based on Magic Portfolio by Once UI. Original authors:*
+- Lorant Toth: [Threads](https://www.threads.net/@lorant.one), [LinkedIn](https://www.linkedin.com/in/tothlorant/)  
+- Zsofia Komaromi: [Threads](https://www.threads.net/@zsofia_kom), [LinkedIn](https://www.linkedin.com/in/zsofiakomaromi/)
+- Localization added by [François Hernandez](https://github.com/francoishernandez)
 
 # **Get involved**
 

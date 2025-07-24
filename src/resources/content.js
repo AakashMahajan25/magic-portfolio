@@ -83,16 +83,14 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/aakash-mahajan/30min",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Aakash is a Delhi-based full-stack and DevOps engineer with a passion for building clean, scalable systems — from intuitive user interfaces to backend automation. His work spans web platforms, internal tooling, and algorithmic trading strategies, driven by a balance of engineering precision and entrepreneurial curiosity.
       </>
     ),
   },
@@ -101,41 +99,60 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Numatix Solutions",
+        timeframe: "June 2025 - Sept 2025",
+        role: "Quant Developer Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Built internal dashboards and monitoring tools for real-time PnL tracking, system health, and execution diagnostics, improving transparency and response time for trading failures.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Automated CI/CD pipelines and infrastructure provisioning using Docker, GitHub Actions, and Terraform, reducing manual deployment time by over 70%.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Build In Bharat",
+        timeframe: "May 2024 - Dec 2024",
+        role: "Frontend Developer Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            ID8DevHub: Implemented 10+ frontend features (auth, feeds, profiles) in Next.js, improving page performance
+            scores from 68 to 91 and accelerating user onboarding by 30%.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Omni Vibe: Architected the frontend for a B2B AI automation platform used by 100+ clients. Built dashboards
+            and real-time flows with React, Zustand, and Tailwind, reducing dashboard load time by 45%.
+          </>,
+          <>
+            Bhasha Bandhu Hackathon: Collaborated as a core team member under the BHASHINI initiative. Designed
+            and shipped the hackathon dashboard in under 3 weeks, supporting 500+ participants across India.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Code Folder",
+        timeframe: "Jan 2024 - Apr 2024",
+        role: "Frontend Developer Intern",
+        achievements: [
+          <>
+            Core Product: Delivered core platform modules including landing page, authentication, and dashboard using
+            Next.js, Tailwind, and Prisma. Boosted user session retention by 27% through backend optimizations.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "StudyByU",
+        timeframe: "Sept 2023 - Dec 2023",
+        role: "Freelance",
+        achievements: [
+          <>
+            Core Product: Built dashboard and video learning modules for NCERT-based platform with 5,000+ users.
+            Contributed to a 40% increase in daily active users during exams and improved video load times by 33%.
           </>,
         ],
         images: [],
@@ -144,20 +161,20 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Bharati Vidyapeeth’s College of Engineering",
+        description: <>Bachelor of Technology in Information Technology</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Salwan Public School",
+        description: <>Senior Secondary (CBSE)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {

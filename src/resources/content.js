@@ -258,8 +258,8 @@ const work = {
         "/images/projects/tatsat.png",
       ],
       tag: "Wellness",
-      link: "https://tatsatyogaschool.com/",
-      projectLink: "https://tatsatyogaschool.com/",
+      link: "https://www.tatsatyogaschool.org/",
+      projectLink: "https://www.tatsatyogaschool.org/",
       slug: "tatsat-yoga-school"
     },
     {
@@ -282,8 +282,8 @@ const work = {
         "/images/projects/weekends.png",
       ],
       tag: "Landing Page",
-      link: "https://weekendsforever.com/",
-      projectLink: "https://weekendsforever.com/",
+      link: "https://www.weekendsforever.in/",
+      projectLink: "https://www.weekendsforever.in/",
       slug: "weekends-forever-retreat-booking"
     },
     {

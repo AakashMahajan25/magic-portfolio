@@ -226,9 +226,80 @@ const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `A showcase of my latest projects, case studies, and technical achievements. From full-stack applications to design systems and automation tools.`,
+      projects: [
+      {
+      title: "Quiro.in – Intelligent Hotel Management Software",
+      summary: "Developed an intelligent hotel management software enabling seamless booking, real-time room availability, automated billing, and advanced analytics for hospitality businesses.",
+      images: [
+        "/images/projects/quiro.png",
+      ],
+      tag: "SaaS",
+      link: "https://quiro-prod.vercel.app/",
+      projectLink: "https://quiro-prod.vercel.app/",
+      slug: "quiro-trading-analytics-platform"
+    },
+      {
+      title: "StudyByU – Online Education Platform",
+      summary: "Built StudyByU, a scalable online education platform supporting live classes, interactive assessments, and personalized learning paths. Enhanced student engagement with real-time analytics, seamless content delivery, and robust admin tools for educators.",
+      images: [
+        "/images/projects/studybyu.png",
+      ],
+      tag: "EdTech",
+      link: "https://studybyu.com/",
+      projectLink: "https://studybyu.com/",
+      slug: "quiro-trading-analytics-platform"
+    },
+    {
+      title: "Tatsat Yoga School - Wellness Retreat",
+
+      summary: "Revamped and migrated a traditional yoga institute’s website to Next.js, improving SEO, mobile performance, and UX. Increased course inquiries by 40% and reduced bounce rate by 25%.",
+      images: [
+        "/images/projects/tatsat.png",
+      ],
+      tag: "Wellness",
+      link: "https://tatsatyogaschool.com/",
+      projectLink: "https://tatsatyogaschool.com/",
+      slug: "tatsat-yoga-school"
+    },
+    {
+      title: "Camio PPF – India’s Leading PPF Seller",
+
+      summary: "Developed a scalable web app for warranty registration and claims handling for 10,000+ customers, reducing support resolution time by 60% and digitizing 90% of paper-based processes.",
+      images: [
+        "/images/projects/camio.png",
+      ],
+      tag: "Automation",
+      link: "https://camioppf.com/",
+      projectLink: "https://camioppf.com/",
+      slug: "camio-ppf-warranty-platform"
+    },
+    {
+      title: "Weekends Forever - Resort in Rishikesh",
+
+      summary: "Built and optimized a high-conversion retreat website, increasing direct bookings by 35% and reducing reliance on third-party platforms using clean UI/UX and performance-focused design.",
+      images: [
+        "/images/projects/weekends.png",
+      ],
+      tag: "Landing Page",
+      link: "https://weekendsforever.com/",
+      projectLink: "https://weekendsforever.com/",
+      slug: "weekends-forever-retreat-booking"
+    },
+    {
+      title: "CodeFolder - Coding Resources Website",
+
+      summary: "Developed CodeFolder, a modern coding resources platform featuring curated tutorials, code snippets, and developer tools. Implemented advanced search, responsive UI with Next.js and Tailwind CSS, and seamless content management for the tech community.",
+      images: [
+        "/images/projects/codefolder.png",
+      ],
+      tag: "Technical Resources",
+      link: "https://codefolder.vercel.app/",
+      projectLink: "https://codefolder.vercel.app/",
+      slug: "weekends-forever-retreat-booking"
+    },
+  ]
+  
 };
 
 const gallery = {

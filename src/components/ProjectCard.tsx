@@ -1,13 +1,14 @@
 "use client";
 
 import {
-  AvatarGroup,
   Carousel,
   Column,
   Flex,
   Heading,
   SmartLink,
   Text,
+  Badge,
+  Row,
 } from "@once-ui-system/core";
 
 interface ProjectCardProps {
@@ -17,8 +18,9 @@ interface ProjectCardProps {
   title: string;
   content: string;
   description: string;
-  avatars: { src: string }[];
   link: string;
+  projectLink?: string;
+  tag?: string;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -27,47 +29,103 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   content,
   description,
-  avatars,
   link,
+  projectLink,
+  tag,
 }) => {
+  const handleCardClick = () => {
+    if (projectLink) {
+      window.open(projectLink, '_blank');
+    }
+  };
+
   return (
-    <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
+    <Column 
+      fillWidth 
+      gap="l" 
+      padding="l" 
+      border="neutral-medium" 
+      radius="l"
+      background="neutral-alpha-weak"
+      style={{
+        transition: "all 0.3s ease",
+        cursor: projectLink ? "pointer" : "default",
+      }}
+      onMouseEnter={(e) => {
+        if (projectLink) {
+          e.currentTarget.style.transform = "translateY(-4px)";
+          e.currentTarget.style.boxShadow = "0 8px 32px rgba(0, 0, 0, 0.1)";
+        }
+      }}
+      onMouseLeave={(e) => {
+        if (projectLink) {
+          e.currentTarget.style.transform = "translateY(0)";
+          e.currentTarget.style.boxShadow = "none";
+        }
+      }}
+      onClick={handleCardClick}
+    >
+      {/* Project Image */}
+      {images.length > 0 && (
+        <Column fillWidth gap="m">
+          <Carousel
+            sizes="(max-width: 960px) 100vw, 960px"
+            items={images.map((image) => ({
+              slide: image,
+              alt: title,
+            }))}
+          />
+        </Column>
+      )}
+
+      {/* Project Content */}
       <Flex
         mobileDirection="column"
         fillWidth
-        paddingX="s"
-        paddingTop="12"
-        paddingBottom="24"
         gap="l"
       >
-        {title && (
-          <Flex flex={5}>
-            <Heading as="h2" wrap="balance" variant="heading-strong-xl">
+        {/* Header Section */}
+        <Column flex={5} gap="m">
+          {title && (
+            <Heading as="h3" wrap="balance" variant="heading-strong-l">
               {title}
             </Heading>
-          </Flex>
-        )}
-        {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-          <Column flex={7} gap="16">
-            {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
+          )}
+          
+          {/* Project Type Badge */}
+          {tag && (
+            <Flex gap="s" wrap>
+              <Badge 
+                background="brand-alpha-weak" 
+                paddingX="8" 
+                paddingY="2" 
+                onBackground="neutral-strong" 
+                textVariant="label-default-xs" 
+                arrow={false}
+              >
+                <Row paddingY="1">{tag}</Row>
+              </Badge>
+            </Flex>
+          )}
+        </Column>
+
+        {/* Description and Actions */}
+        {(description?.trim() || content?.trim()) && (
+          <Column flex={7} gap="l">
             {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
+              <Text wrap="balance" variant="body-default-m" onBackground="neutral-weak">
                 {description}
               </Text>
             )}
-            <Flex gap="24" wrap>
+
+            {/* Action Links */}
+            <Flex gap="m" wrap>
               {content?.trim() && (
                 <SmartLink
                   suffixIcon="arrowRight"
                   style={{ margin: "0", width: "fit-content" }}
                   href={href}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Text variant="body-default-s">Read case study</Text>
                 </SmartLink>
@@ -77,6 +135,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   suffixIcon="arrowUpRightFromSquare"
                   style={{ margin: "0", width: "fit-content" }}
                   href={link}
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <Text variant="body-default-s">View project</Text>
                 </SmartLink>
